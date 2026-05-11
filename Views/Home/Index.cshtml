@@ -1,0 +1,99 @@
+﻿@using Microsoft.AspNetCore.Http
+@inject IHttpContextAccessor Accessor
+
+@model List<TeknoPortal.Models.Makale>
+
+@if (TempData["Bilgi"] != null)
+{
+    <div class="alert alert-success">
+        @TempData["Bilgi"]
+    </div>
+}
+
+<div class="row">
+
+    <div class="col-md-8">
+
+        <h2 class="mb-4">
+            Son Yazılar
+        </h2>
+
+        @foreach(var makale in Model)
+        {
+            <div class="card mb-4 shadow">
+
+                <img
+                    src="@makale.ResimUrl"
+                    class="card-img-top"
+                    style="max-height:300px;object-fit:cover;" />
+
+                <div class="card-body">
+
+                    <h3>
+                        @makale.Baslik
+                    </h3>
+
+                    <small class="text-muted">
+                        @makale.Tarih
+                    </small>
+
+                    <p class="mt-3">
+                        @makale.Icerik
+                    </p>
+
+                    @if (Accessor.HttpContext.Session.GetString("GirisYapan") != null)
+                    {
+                        <a
+                            href="/Admin/MakaleSil/@makale.Id"
+                            class="btn btn-danger">
+
+                            Makaleyi Sil
+
+                        </a>
+                    }
+
+                </div>
+
+            </div>
+        }
+
+    </div>
+
+    <div class="col-md-4">
+
+        <div class="card p-3 bg-dark text-white shadow">
+
+            <h4>Bize Ulaşın</h4>
+
+            <form asp-action="MesajGonder" method="post">
+
+                <input
+                    name="Gonderen"
+                    class="form-control mb-2"
+                    placeholder="Adınız"
+                    required />
+
+                <input
+                    name="Konu"
+                    class="form-control mb-2"
+                    placeholder="Konu"
+                    required />
+
+                <textarea
+                    name="Metin"
+                    class="form-control mb-2"
+                    rows="4"
+                    placeholder="Mesajınız"
+                    required></textarea>
+
+                <button class="btn btn-warning w-100">
+                    Gönder
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</div>

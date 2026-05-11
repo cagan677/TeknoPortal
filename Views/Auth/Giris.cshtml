@@ -1,0 +1,41 @@
+<div class="row justify-content-center mt-5">
+
+    <div class="col-md-4">
+
+        <div class="card p-4 shadow">
+
+            <h3 class="text-center mb-4">
+                Yönetici Girişi
+            </h3>
+
+            <form asp-action="Giris" method="post">
+
+                <input
+                    type="email"
+                    name="email"
+                    class="form-control mb-3"
+                    placeholder="E-Posta"
+                    required />
+
+                <input
+                    type="password"
+                    name="sifre"
+                    class="form-control mb-3"
+                    placeholder="Şifre"
+                    required />
+
+                <button class="btn btn-dark w-100">
+                    Giriş Yap
+                </button>
+
+            </form>
+
+            <p class="text-danger mt-3">
+                @ViewBag.Hata
+            </p>
+
+        </div>
+
+    </div>
+
+</div>

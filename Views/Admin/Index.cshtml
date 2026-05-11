@@ -1,0 +1,80 @@
+@model List<TeknoPortal.Models.IletisimMesaji>
+
+<div class="d-flex justify-content-between align-items-center mb-4">
+
+    <h2 class="text-success">
+        Yönetim Paneli
+    </h2>
+
+</div>
+
+<div class="row">
+
+    <div class="col-md-6">
+
+        <div class="card p-3 shadow">
+
+            <h4>Yeni Makale</h4>
+
+            <form asp-action="MakaleEkle" method="post">
+
+                <input
+                    name="Baslik"
+                    class="form-control mb-2"
+                    placeholder="Başlık"
+                    required />
+
+                <input
+                    name="ResimUrl"
+                    class="form-control mb-2"
+                    placeholder="Resim Url" />
+
+                <textarea
+                    name="Icerik"
+                    class="form-control mb-2"
+                    rows="5"
+                    placeholder="İçerik"
+                    required></textarea>
+
+                <button class="btn btn-info w-100">
+                    Yayınla
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <div class="col-md-6">
+
+        <h4>Gelen Mesajlar</h4>
+
+        @foreach(var mesaj in Model)
+        {
+            <div class="alert @(mesaj.OkunduMu ? "alert-secondary" : "alert-warning")">
+
+                <strong>@mesaj.Gonderen</strong>
+
+                <br />
+
+                <small>@mesaj.Konu</small>
+
+                <p class="mt-2">
+                    @mesaj.Metin
+                </p>
+
+                <a
+                    href="/Admin/OkunduYap/@mesaj.Id"
+                    class="btn btn-sm btn-dark">
+
+                    Okundu Yap
+
+                </a>
+
+            </div>
+        }
+
+    </div>
+
+</div>
