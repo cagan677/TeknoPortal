@@ -21,5 +21,5 @@ Bu proje, Bilişim Teknolojileri Web Geliştirme dersi kapsamında, sıfırdan g
 * **Frontend:** HTML5, CSS3, Bootstrap 5
 
 ## 💻 Geliştirici
-**[Efe Burak OCAK]** 
+**[Necat Çağan Çakmakçılar]** 
 *Zonguldak Mesleki ve Teknik Anadolu Lisesi - Bilişim Teknolojileri Alanı*

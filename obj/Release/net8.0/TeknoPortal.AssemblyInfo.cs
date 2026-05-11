@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TeknoPortal")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+63c5a21af687a0f4ec7183e8035533e6826da3c1")]
 [assembly: System.Reflection.AssemblyProductAttribute("TeknoPortal")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TeknoPortal")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -141,3 +141,4 @@ C:\Users\ADMİN\Desktop\TeknoPortal\obj\Release\net8.0\refint\TeknoPortal.dll
 C:\Users\ADMİN\Desktop\TeknoPortal\obj\Release\net8.0\TeknoPortal.pdb
 C:\Users\ADMİN\Desktop\TeknoPortal\obj\Release\net8.0\TeknoPortal.genruntimeconfig.cache
 C:\Users\ADMİN\Desktop\TeknoPortal\obj\Release\net8.0\ref\TeknoPortal.dll
+C:\Users\ADMİN\Desktop\TeknoPortal\obj\Release\net8.0\TeknoPortal.sourcelink.json

@@ -146,3 +146,4 @@ C:\Users\ADMİN\Desktop\TeknoPortal\bin\Debug\net8.0\publish\appsettings.Develop
 C:\Users\ADMİN\Desktop\TeknoPortal\bin\Debug\net8.0\publish\appsettings.json
 C:\Users\ADMİN\Desktop\TeknoPortal\bin\Debug\net8.0\publish\TeknoPortal.deps.json
 C:\Users\ADMİN\Desktop\TeknoPortal\bin\Debug\net8.0\publish\TeknoPortal.runtimeconfig.json
+C:\Users\ADMİN\Desktop\TeknoPortal\obj\Debug\net8.0\TeknoPortal.sourcelink.json
